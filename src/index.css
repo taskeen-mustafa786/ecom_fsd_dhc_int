@@ -1,0 +1,61 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, system-ui, sans-serif;
+  background-color: #f5f7fb;
+  color: #1f2937;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.app-shell {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.hero {
+  max-width: 45rem;
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.12);
+}
+
+.hero h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.hero p {
+  margin: 0 0 1.5rem;
+  line-height: 1.75;
+  color: #475569;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.actions a {
+  display: inline-block;
+  padding: 0.75rem 1.1rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  color: white;
+  background: #2563eb;
+  transition: background 0.2s ease;
+}
+
+.actions a:hover {
+  background: #1d4ed8;
+}
